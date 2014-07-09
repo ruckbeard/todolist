@@ -1,0 +1,31 @@
+#links{
+	padding-top: 10px;
+	text-align: center;
+}
+
+#links #saveAll {
+	padding: 5px;
+	font-size: 1em;
+}
+
+#links #clearAll {
+	padding: 5px;
+	font-size: 1em;
+}
+
+#links #doClearAll #clearAll {
+	padding: 5px;
+	font-size: 1em;
+}
+
+.row {
+	margin: 0 auto;
+}
+.panel{
+	margin-top: 20%;
+}
+
+.listItem {
+	border: none;
+	width: 90%
+}
