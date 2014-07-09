@@ -1,3 +1,7 @@
+body {
+	background-image: url(../images/background.jpg)
+}
+
 #links{
 	padding-top: 10px;
 	text-align: center;
@@ -21,6 +25,7 @@
 .row {
 	margin: 0 auto;
 }
+
 .panel{
 	margin-top: 20%;
 }
@@ -28,4 +33,38 @@
 .listItem {
 	border: none;
 	width: 90%
+}
+
+.simpleList:hover {
+	background-color: #ccc;
+}
+
+.simplePanelHead {
+	background-color: #000 !important; 
+	border-color: #7A7A7A !important;
+	color: #fff !important;
+}
+
+.simplePanel {
+	border-color: #7A7A7A !important;
+}
+
+.advancedList:hover {
+	background-color: #ccc;
+}
+
+
+
+.advancedPanelHead {
+	background-color: #000 !important; 
+	border-color: #7A7A7A !important;
+	color: #fff !important;
+}
+
+.advancedPanel {
+	border-color: #7A7A7A !important;
+}
+
+.advancedInput {
+	margin-bottom: 20px;
 }

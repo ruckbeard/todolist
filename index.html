@@ -53,9 +53,9 @@
 
     <div class="container">
 
-    	<div class="panel panel-default">
+    	<div class="panel panel-default simplePanel">
 		  <!-- Default panel contents -->
-		  <div class="panel-heading">Todo List</div>
+		  <div class="panel-heading simplePanelHead">Todo List</div>
 		  <div class="panel-body">
 		    <p>Click and edit your list at will.</p>
 		    <p>Press enter to create new entries.</p>
@@ -64,7 +64,7 @@
 
 		  <!-- List group -->
 		  <ul class="list-group" id="theList" contenteditable >
-		    <li class="list-group-item">Click Me</li>
+		    <li class="list-group-item simpleList">Click Me</li>
 		  </ul>
 		  <p id="links">
 		  	<a href="javascript.void();" id="saveAll" class="label label-default">Save All</a>
@@ -99,7 +99,7 @@
     		if(localStorage.getItem('todoList')){
     			theList.innerHTML = localStorage.getItem('todoList');
     		} else {
-    			theList.innerHTML = "<li class='list-group-item'>Click Me</li>"
+    			theList.innerHTML = "<li class='list-group-item simpleList'>Click Me</li>"
     		}
     	}
     });

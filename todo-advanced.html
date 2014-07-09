@@ -53,9 +53,9 @@
 
     <div class="container">
 
-    	<div class="panel panel-default">
+    	<div class="panel panel-default advancedPanel">
 		  <!-- Default panel contents -->
-		  <div class="panel-heading">Todo List</div>
+		  <div class="panel-heading advancedPanelHead">Todo List</div>
 		  <div class="panel-body">
 		    <p>Add list items with the text input.</p>
 		    <p>Items can be deleted, edited, and sorted.</p>
@@ -64,7 +64,7 @@
 		  <form name="form1" method="post" action="">
 		  <div class="row">
 			  <div class="col-lg-12">
-			    <div class="input-group">
+			    <div class="input-group advancedInput">
 			      <input type="text" class="form-control" id="toDoItem" autofocus >
 			      <span class="input-group-btn">
 			        <button class="btn btn-default" name="addToDo" id="addToDo" type="button">Add Item</button>
@@ -99,7 +99,7 @@
 					e.preventDefault();
 					if (newList == true) {
 						var theValue = $('#toDoItem').val();
-						newListItem = '<li class="list-group-item"><span class="handle"> :: </span> <input class="listItem" value="' + theValue + '"><a class="removeListItem" style="display: none;" href="#"> X </a> </li>';
+						newListItem = '<li class="list-group-item advancedList"><span class="handle"> :: </span> <input class="listItem" value="' + theValue + '"><a class="removeListItem" style="display: none;" href="#"> X </a> </li>';
 						newList = false;
 					} else {
 						var theValue = $('#toDoItem').val();
@@ -145,12 +145,16 @@
 
 				$('#theList').on('mouseover','li', function(){
 					var $thisA = $(this).find('a');
+					var $thisI = $(this).find('input')
 					$thisA.css('display','inline');
+					$thisI.css('background-color', '#ccc');
 				});
 
 				$('#theList').on('mouseout','li', function(){
 					var $thisA = $(this).find('a');
+					var $thisI = $(this).find('input');
 					$thisA.css('display','none');
+					$thisI.css('background-color','#fff')
 				});
 
 				$('#theList').on('click','.removeListItem', function(e) {
